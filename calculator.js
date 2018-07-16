@@ -2,19 +2,32 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (firstNumber) {
+    this.firstNumber = firstNumber
   }
-  add () {
+  add (secondNumber) {
+    this.firstNumber += secondNumber
+    return this
   }
-  subtract () {
+  subtract (secondNumber) {
+    this.firstNumber -= secondNumber
+    return this
   }
-  multiply () {
+  multiply (secondNumber) {
+    this.firstNumber *= secondNumber
+    return this
   }
-  divide () {
+  divide (secondNumber) {
+    this.firstNumber /= secondNumber
+    return this
   }
-  square () {
+  square (secondNumber) {
+    this.firstNumber += Math.pow(this.firstNumber,secondNumber)
+    return this
   }
   squareRoot () {
+    this.firstNumber += Math.sqrt(this.firstNumber)
+    return this
   }
 }
 
