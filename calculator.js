@@ -1,20 +1,44 @@
 'use strict'
 
 class Calculator {
-  //write your code here
+  
   constructor () {
+    this.prosess = "0"
+    this.hasil = 0
   }
-  add () {
+  input(str) {
+    this.prosess += str
+    return this
   }
-  subtract () {
+  add (num) {
+    this.input(' + '+num)
+    this.hasil += num
+    return this
   }
-  multiply () {
+  subtract (num) {
+    this.input(' - '+num)
+    this.hasil -= num
+    return this
   }
-  divide () {
+  multiply (num) {
+    this.input(' x '+num)
+    this.hasil *= num
+    return this
   }
-  square () {
+  divide (num) {
+    this.input(' / '+num)
+    this.hasil /= num
+    return this
   }
-  squareRoot () {
+  square (num) {
+    this.input(' x '+num)
+    this.hasil **= num
+    return this
+  }
+  squareRoot (num) {
+    this.input(' + ankar pangkat dari ' + num)
+    this.hasil = Math.sqrt(num)
+    return this
   }
 }
 
