@@ -2,19 +2,37 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (input) {
+    this._number = input;
+    this._pi = Math.PI;
   }
-  add () {
+  add (input) {
+    this._number += input;
+    return this;
   }
-  subtract () {
+  subtract (input) {
+    this._number -= input;
+    return this;
   }
-  multiply () {
+  multiply (input) {
+    this._number *= input
+    return this;
   }
-  divide () {
+  divide (input) {
+    this._number /= input;
+    return this;
   }
-  square () {
+  square (input) {
+    this._number = Math.pow(this._number, input);
+    return this;
   }
   squareRoot () {
+    this._number = Math.sqrt(this._number);
+    return this;
+  }
+  circleArea(input){
+    this._number = this._pi * this.square(input)
+    return this;
   }
 }
 

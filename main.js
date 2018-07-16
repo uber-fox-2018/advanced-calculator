@@ -2,4 +2,5 @@
 
 const Calculator = require("./calculator.js")
 
-// execute function on calculator.js in here
+let calculate = new Calculator(1)
+console.log(calculate.add(3).divide(2)._number)
