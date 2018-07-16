@@ -3,18 +3,31 @@
 class Calculator {
   //write your code here
   constructor () {
+    this._number = 0
   }
-  add () {
+  add (number) {
+    this._number = this._number+number;
+    return this;
   }
-  subtract () {
+  subtract (number) {
+    this._number = this._number-number;
+    return this;
   }
-  multiply () {
+  multiply (number) {
+    this._number = this._number*number;
+    return this
   }
-  divide () {
+  divide (number) {
+    this._number = this._number/number;
+    return this
   }
-  square () {
+  square (number) {
+    this._number = Math.pow(this._number,number);
+    return this
   }
   squareRoot () {
+    this._number = Math.sqrt(this._number)
+    return this
   }
 }
 
