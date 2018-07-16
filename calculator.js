@@ -2,19 +2,32 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (num) {
+    this.result = num
   }
-  add () {
+  add (number) { // perjumlahan
+    this.result = this.result + number
+    return this
   }
-  subtract () {
+  subtract (number) { // pengurangan
+    this.result = this.result - number
+    return this
   }
-  multiply () {
+  multiply (number) { // perkalian
+    this.result = this.result * number
+    return this
   }
-  divide () {
+  divide (number) { // pembagian
+    this.result = this.result / number
+    return this
   }
-  square () {
+  square (number) { // kuadrat 
+    this.result = Math.pow(this.result,number)
+    return this
   }
-  squareRoot () {
+  squareRoot () { // akar kuadrat
+    this.result = Math.sqrt(this.result)
+    return this
   }
 }
 
