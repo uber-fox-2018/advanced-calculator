@@ -1,21 +1,49 @@
 'use strict'
 
 class Calculator {
-  //write your code here
-  constructor () {
-  }
-  add () {
-  }
-  subtract () {
-  }
-  multiply () {
-  }
-  divide () {
-  }
-  square () {
-  }
-  squareRoot () {
-  }
+	constructor (number = 1) {
+		this.number = number;
+		this.PI = 3.14;
+	}
+
+	input(number) {
+		this.number = number;
+		return this;
+	}
+
+	add (number) {
+		`${ this.number += number}`;
+		return this;
+	}
+
+	subtract (number) {
+		`${ this.number -= number}`;
+		return this;
+	}
+
+	multiply (number) {
+		`${ this.number *= number}`;
+		return this;
+	}
+
+	divide (number) {
+		`${ this.number /= number}`;
+		return this;
+	}
+
+	square () {
+		`${ this.number = this.number * this.number}`;
+		return this;
+	}
+
+	squareRoot () {
+		`${ this.number = Math.sqrt(this.number) }`;
+    	return this;		
+	}
+
+	print() {
+		return this.number;
+	}
 }
 
 /** note : you can use several features from ecmascript, such as:
