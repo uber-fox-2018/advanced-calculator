@@ -2,4 +2,7 @@
 
 const Calculator = require("./calculator.js")
 
-// execute function on calculator.js in here
+let cl = new Calculator();
+
+console.log(cl.input(9).print());
+console.log(cl.input(9).add(5).print());
