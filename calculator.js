@@ -1,20 +1,59 @@
 'use strict'
 
 class Calculator {
-  //write your code here
+
   constructor () {
+    this.phi = 3.14
+    this.result = 0
   }
-  add () {
+
+  //  penjumlahan
+  add (num) {
+    this.result += num
+    
+    return this
   }
-  subtract () {
+
+  //  pengurangan
+  subtract (num) {
+    this.result -= num
+    
+    return this
   }
-  multiply () {
+
+  //  perkalian
+  multiply (num) {
+    this.result *= num
+    
+    return this
   }
-  divide () {
+
+  //  pembagian
+  divide (num) {
+    this.result /= num
+    
+    return this
   }
-  square () {
+
+  //  akar
+  square (num) {
+    this.result = Math.sqrt(num * num)
+    
+    return this
   }
-  squareRoot () {
+
+  //  pangkat
+  squareRoot (num) {
+    this.result = Math.pow(num, num)
+
+    return this
+  }
+  
+  //  lingkaran
+  circle(num){
+    this.result = (num * num) / this.phi
+
+    return this
   }
 }
 
