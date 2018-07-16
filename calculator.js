@@ -2,19 +2,39 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (num) {
+    this.num= num
+    
   }
-  add () {
+  add (param) {
+    var result= this.num + param
+    this.num= result
+    return this
   }
-  subtract () {
+  subtract (param) {
+    var result= this.num - param
+    this.num= result
+    return this
   }
-  multiply () {
+  multiply (param) {
+    var result= this.num * param
+    this.num= result
+    return this
   }
-  divide () {
+  divide (param) {
+    var result= this.num / param
+    this.num= result
+    return this
   }
   square () {
+    var result= this.num * this.num
+    this.num= result
+    return this
   }
   squareRoot () {
+    var result= Math.sqrt(this.num)
+    this.num= result
+    return this
   }
 }
 
