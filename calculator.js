@@ -44,6 +44,4 @@ class Calculator {
 */
 
 module.exports = Calculator
-var calc = new Calculator(8)
-// console.log(calc.add())
-console.log(calc.pI().result)
+
