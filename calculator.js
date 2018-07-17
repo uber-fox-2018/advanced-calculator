@@ -31,14 +31,15 @@ class Calculator {
     return this
   } 
 
-  hitungLingkaran() {
+  hitungLingkaran () {
     this.num = this.pi * this.num
     return this
   }
-}
 
-var calculate = new Calculator(1)
-console.log(calculate.add(5).subtract(2).multiply(2).square(2).squareRoot().hitungLingkaran())
+  print () {
+    return `result: ${this.num}`
+  }
+}
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
